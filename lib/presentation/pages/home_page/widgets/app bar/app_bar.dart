@@ -3,7 +3,7 @@ import 'package:musilore/core/utils/color/colors.dart';
 import 'package:musilore/core/utils/size/size.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/app_bar_action_button.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/tab_bar_widget.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings_widget.dart';
+import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/settings_widget.dart';
 import 'package:musilore/presentation/widgets/app_name_logo/app_name_text_widget.dart';
 import 'package:musilore/state/notifier/search_notifier.dart';
 import 'package:musilore/state/notifier/theme_notifier.dart';

@@ -29,7 +29,7 @@ class SelectPlayListWidget extends StatelessWidget {
       builder: (context, playListNotifier, _) => Column(
         children: [
           const SizedBox(
-            height: 35,
+            height: 36,
           ),
           DropdownButton(
             value: playListNotifier.selectedPlayListId,

@@ -34,7 +34,7 @@ class PlaySongPage extends StatelessWidget {
                   children: [
                     SingleChildScrollView(
                       child: Padding(
-                        padding: EdgeInsets.only(top: 32),
+                        padding: const EdgeInsets.only(top: 32),
                         child: Column(
                           children: [
                             MusicContainer(

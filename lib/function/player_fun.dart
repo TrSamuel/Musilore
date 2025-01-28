@@ -17,6 +17,8 @@ class PlayerFunctions {
     player.positionStream.listen((position) {
       playSliderDurationValue.value = position;
     });
+    await player.setVolume(0.5);
+    volumeNotifier.value = player.volume;
   }
 
   Future<void> playSong() async {
@@ -89,5 +91,10 @@ class PlayerFunctions {
 
   void stopSong() async {
     await player.stop();
+  }
+
+  Future<void> changeVolume(double volume) async {
+    await player.setVolume(volume);
+    volumeNotifier.value = player.volume;
   }
 }

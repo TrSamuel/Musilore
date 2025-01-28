@@ -15,28 +15,31 @@ class ThemeChangerSwitch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        const Text('Dark theme'),
-        Consumer<ThemeModel>(
-          builder: (context, themeData, _) => Switch(
-            trackColor: MaterialStatePropertyAll(
-              darkThemeStatus
-                  ? secondaryColor.withOpacity(0.5)
-                  : primaryTextColor.withOpacity(0.5),
+    return Padding(
+      padding: const EdgeInsets.only(left: 8),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          const Text('Dark theme'),
+          Consumer<ThemeModel>(
+            builder: (context, themeData, _) => Switch(
+              trackColor: MaterialStatePropertyAll(
+                darkThemeStatus
+                    ? secondaryColor.withOpacity(0.5)
+                    : primaryTextColor.withOpacity(0.5),
+              ),
+              thumbColor: darkThemeStatus
+                  ? MaterialStatePropertyAll(secondaryColor)
+                  : const MaterialStatePropertyAll(primaryColor),
+              value: darkThemeStatus,
+              onChanged: (_) {
+                themeData.changeTheme();
+                Navigator.pop(context);
+              },
             ),
-            thumbColor: darkThemeStatus
-                ? MaterialStatePropertyAll(secondaryColor)
-                : const MaterialStatePropertyAll(primaryColor),
-            value: darkThemeStatus,
-            onChanged: (_) {
-              themeData.changeTheme();
-              Navigator.pop(context);
-            },
-          ),
-        )
-      ],
+          )
+        ],
+      ),
     );
   }
 }

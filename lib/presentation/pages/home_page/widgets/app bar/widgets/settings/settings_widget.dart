@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:musilore/core/utils/color/colors.dart';
+import 'package:musilore/core/utils/secure/devemail.dart';
 import 'package:musilore/core/utils/size/size.dart';
 import 'package:musilore/core/utils/text/txt.dart';
+import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/show_dialoge_settings.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/sync_now_btn.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/theme_changer_swich.dart';
 
@@ -82,13 +84,13 @@ class SettingsWidget extends StatelessWidget {
                       fontSize: h3Size,
                     )),
                 onPressed: () {
-                  showDialog(
+                  showDialogForSettings(
+                    title: "Privacy Policy",
+                    contentTitle:
+                        "Musilore respects your privacy and is designed to work entirely offline. The app does not collect, store, or share any personal data or files. It only accesses your device’s storage to locate and play music files, and media controls are used solely for playback features like play/pause and shuffle. No information is shared with third parties, and Musilore is safe for users of all ages. For any questions, contact us at $mail.",
                     context: context,
-                    builder: (context) => const AlertDialog(
-                      title: Text("About"),
-                      content: Text(
-                          "Musilore respects your privacy and is designed to work entirely offline. The app does not collect, store, or share any personal data or files. It only accesses your device’s storage to locate and play music files, and media controls are used solely for playback features like play/pause and shuffle. No information is shared with third parties, and Musilore is safe for users of all ages. For any questions, contact us at trsamual@gmail.com."),
-                    ),
+                    darkThemeStatus: darkThemeStatus,
+                    secondaryColor: secondaryColor,
                   );
                 },
                 child: const Text("Privacy Policy")),
@@ -102,13 +104,13 @@ class SettingsWidget extends StatelessWidget {
                       fontSize: h3Size,
                     )),
                 onPressed: () {
-                  showDialog(
+                  showDialogForSettings(
+                    title: "About",
+                    contentTitle:
+                        "Musilore - Your Personal Music Player Musilore lets you play songs stored on your device with ease. Create playlists, add favorites, search for tracks, and enjoy dynamic color themes that match your music. With shuffle, play/pause, and next/prev controls, it’s music made simple and stylish!",
                     context: context,
-                    builder: (context) => const AlertDialog(
-                      title: Text("About"),
-                      content: Text(
-                          "Musilore - Your Personal Music Player Musilore lets you play songs stored on your device with ease. Create playlists, add favorites, search for tracks, and enjoy dynamic color themes that match your music. With shuffle, play/pause, and next/prev controls, it’s music made simple and stylish!"),
-                    ),
+                    darkThemeStatus: darkThemeStatus,
+                    secondaryColor: secondaryColor,
                   );
                 },
                 child: const Text("About")),

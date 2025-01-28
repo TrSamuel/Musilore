@@ -28,7 +28,7 @@ class SyncMusic extends StatelessWidget {
           onPressed: () {
             Provider.of<SongNotifier>(context, listen: false).getSongs(context);
           },
-          child: const Text("Sync musics"),
+          child: const Text("Sync songs"),
         ),
       ],
     );

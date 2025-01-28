@@ -117,6 +117,29 @@ Future<dynamic> showPlayListAddDialoge({
                       themeData: themeData,
                       secondaryColor: secondaryColor,
                     ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 18),
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          fixedSize: Size.fromWidth(
+                            MediaQuery.sizeOf(context).width * 0.2,
+                          ),
+                          backgroundColor: themeData.darkThemeStatus
+                              ? secondaryColor
+                              : primaryTextColor.withOpacity(0.1),
+                          foregroundColor: primaryColor,
+                          textStyle: const TextStyle(
+                            fontFamily: textFontFamilyName,
+                            fontSize: h3Size,
+                          ),
+                        ),
+                        onPressed: () {
+                          playListNotifierData.initialSelectionRadioValue();
+                          playListNotifierData.falseErrorTextDropDown();
+                          Navigator.pop(context);
+                        },
+                        child: const Text("Close")),
+                  )
                 ],
               ),
             );

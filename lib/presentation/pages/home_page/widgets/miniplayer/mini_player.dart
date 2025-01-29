@@ -2,17 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:musilore/core/utils/color/colors.dart';
-import 'package:musilore/core/utils/enum/song_play_enum.dart';
-import 'package:musilore/data/sources/db_functions.dart';
-import 'package:musilore/function/player_fun.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/close_mini_player_button.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/full_screen_icon_btn.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/play_actions/widgets/mini_player_action_buttons.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/play_actions/mini_player_action.dart';
 import 'package:musilore/presentation/widgets/song_related/muisc_name_moving_widget.dart';
 import 'package:musilore/state/notifier/song_notifier.dart';
 import 'package:musilore/state/notifier/theme_notifier.dart';
-import 'package:musilore/state/notifier/valuenotifiers.dart';
 import 'package:provider/provider.dart';
 
 class MiniPlayer extends StatelessWidget {

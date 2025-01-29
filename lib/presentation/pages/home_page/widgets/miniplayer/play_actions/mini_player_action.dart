@@ -1,10 +1,8 @@
   // ignore_for_file: use_build_context_synchronously
 
   import 'package:flutter/material.dart';
-import 'package:musilore/core/utils/enum/song_play_enum.dart';
 import 'package:musilore/data/sources/db_functions.dart';
 import 'package:musilore/function/player_fun.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/play_actions/widgets/mini_player_action_buttons.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/play_actions/widgets/next_btn.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/play_actions/widgets/play_pause_btn.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/play_actions/widgets/prev_btn.dart';

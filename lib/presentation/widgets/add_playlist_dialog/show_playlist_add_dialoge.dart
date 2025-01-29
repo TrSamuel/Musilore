@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:musilore/core/utils/color/colors.dart';
-import 'package:musilore/core/utils/size/size.dart';
 import 'package:musilore/core/utils/text/txt.dart';
 import 'package:musilore/data/model/audio%20model/audio_model.dart';
 import 'package:musilore/data/model/playlist%20model/audio_play_list_model.dart';

@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:musilore/core/utils/color/colors.dart';
-import 'package:musilore/core/utils/size/size.dart';
-import 'package:musilore/core/utils/text/txt.dart';
-import 'package:musilore/data/sources/db_functions.dart';
-import 'package:musilore/presentation/pages/add_songs_playlist/add_songs_playlist.dart';
 import 'package:musilore/presentation/pages/create_update_playlist/widgets/add_songs_btn.dart';
 import 'package:musilore/presentation/pages/create_update_playlist/widgets/labelfor_createplaylist_form.dart';
 import 'package:musilore/presentation/pages/create_update_playlist/widgets/playlist_name_enterfiled.dart';
 import 'package:musilore/presentation/pages/create_update_playlist/widgets/songs_selector.dart';
 import 'package:musilore/presentation/pages/create_update_playlist/widgets/submit_btn.dart';
-import 'package:musilore/presentation/widgets/snack_bar.dart';
 import 'package:musilore/state/notifier/play_list_notifier.dart';
-import 'package:musilore/state/notifier/song_notifier.dart';
 import 'package:musilore/state/notifier/theme_notifier.dart';
 import 'package:provider/provider.dart';
 

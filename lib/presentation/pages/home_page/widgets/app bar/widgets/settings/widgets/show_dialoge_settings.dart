@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:musilore/core/utils/color/colors.dart';
-import 'package:musilore/core/utils/secure/devemail.dart';
 import 'package:musilore/core/utils/size/size.dart';
 import 'package:musilore/core/utils/text/txt.dart';
 

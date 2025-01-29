@@ -6,6 +6,7 @@ import 'package:musilore/core/utils/text/txt.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/show_dialoge_settings.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/sync_now_btn.dart';
 import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/theme_changer_swich.dart';
+import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/volume_adjuster.dart';
 
 class SettingsWidget extends StatelessWidget {
   const SettingsWidget({
@@ -33,38 +34,7 @@ class SettingsWidget extends StatelessWidget {
         icon: const Icon(Icons.settings),
         itemBuilder: (context) => [
           PopupMenuItem(
-            child: Padding(
-              padding: const EdgeInsets.only(left: 8),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const Text(
-                    "Volume",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontFamily: textFontFamilyName,
-                      fontSize: h3Size,
-                    ),
-                  ),
-                  Expanded(
-                    child: Slider(
-                      min: 0,
-                      max: 100,
-                      value: 50,
-                      onChanged: (value) {},
-                      thumbColor:
-                          darkThemeStatus ? secondaryColor : primaryColor,
-                      inactiveColor: darkThemeStatus
-                          ? secondaryColor.withOpacity(0.5)
-                          : primaryTextColor.withOpacity(0.5),
-                      activeColor:
-                          darkThemeStatus ? secondaryColor : primaryColor,
-                    ),
-                  )
-                ],
-              ),
-            ),
+            child: VolumeAdjuster(darkThemeStatus: darkThemeStatus, secondaryColor: secondaryColor),
           ),
           PopupMenuItem(
             child: ThemeChangerSwitch(
@@ -120,3 +90,4 @@ class SettingsWidget extends StatelessWidget {
     );
   }
 }
+

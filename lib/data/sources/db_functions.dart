@@ -135,7 +135,7 @@ class DbFunctions {
         audioModelList.add(song);
       }
     }
-    return audioModelList;
+    return audioModelList.reversed.toList();
   }
 
 //

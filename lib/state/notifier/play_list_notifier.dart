@@ -22,7 +22,7 @@ class PlayListNotifier extends ChangeNotifier {
     notifyListeners();
   }
 
-   void falseErrorTextDropDown() {
+  void falseErrorTextDropDown() {
     errorTextDropDown = false;
     notifyListeners();
   }
@@ -78,6 +78,21 @@ class PlayListNotifier extends ChangeNotifier {
               constRecentlyPlayedKey,
             ),
       );
+    }
+    playListList = playListList.reversed.toList();
+    if (sharedPreferences.getString(constFavoritesKey) != null) {
+      final temp = playListList.singleWhere((playList) =>
+          playList.playListId ==
+          sharedPreferences.getString(constFavoritesKey));
+      for (var i = 0; i < playListList.length; i++) {
+        if (playListList[i].playListId == temp.playListId) {
+          for (var j = i; j > 0; j--) {
+            playListList[j] = playListList[j - 1];
+          }
+          playListList[0] = temp;
+          break;
+        }
+      }
     }
 
     notifyListeners();

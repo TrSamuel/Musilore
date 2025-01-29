@@ -5,6 +5,7 @@ import 'package:musilore/core/utils/text/txt.dart';
 import 'package:musilore/data/sources/db_functions.dart';
 import 'package:musilore/data/model/audio%20model/audio_model.dart';
 import 'package:musilore/function/player_fun.dart';
+import 'package:musilore/presentation/pages/home_page/views/recently_played/widgets/more_option_btn.dart';
 import 'package:musilore/presentation/widgets/snack_bar.dart';
 import 'package:musilore/state/notifier/theme_notifier.dart';
 import 'package:musilore/state/notifier/song_notifier.dart';
@@ -70,60 +71,13 @@ class RecetnlyPlayedListTile extends StatelessWidget {
               : primaryColor.withOpacity(0.7),
           titleTextStyle:
               const TextStyle(fontFamily: textFontFamilyName, fontSize: h2Size),
-          trailing: PopupMenuTheme(
-            data: PopupMenuThemeData(
-                color: themeData.darkThemeStatus
-                    ? primaryTextColor
-                    : secondaryColor),
-            child: PopupMenuButton(
-              onSelected: (String value) async {
-                if (value == 'add-to-favorites') {
-                  await DbFunctions.instance
-                      .addToPlayListBox(
-                        audiomodelInstance: audioModel,
-                        playListKey: 'favorites-key',
-                        playListName: 'Favorites',
-                      )
-                      .then(
-                        (_) => {
-                          songplayNotfierData.getFavoritesStatus(),
-                          snackbarWidget(
-                              text: 'Added to favorites',
-                              context: context,
-                              secondaryColor: secondaryColor),
-                        },
-                      );
-                } else {}
-              },
-              child: Icon(
-                Icons.more_vert,
-                color:
-                    themeData.darkThemeStatus ? primaryTextColor : primaryColor,
-              ),
-              itemBuilder: (context) => [
-                const PopupMenuItem(
-                  value: 'add-to-favorites',
-                  textStyle: TextStyle(
-                    color: primaryColor,
-                    fontFamily: textFontFamilyName,
-                    fontSize: h3Size,
-                  ),
-                  child: Text("Add to favorites"),
-                ),
-                const PopupMenuItem(
-                  value: 'add-to-playlist',
-                  textStyle: TextStyle(
-                    color: primaryColor,
-                    fontFamily: textFontFamilyName,
-                    fontSize: h3Size,
-                  ),
-                  child: Text("Add to playlist"),
-                ),
-              ],
-            ),
-          ),
+          trailing: MoreOptionButton(
+            songplayNotfierData: songplayNotfierData,
+            themeData: themeData,
+              secondaryColor: secondaryColor, audioModel: audioModel),
         ),
       );
     });
   }
 }
+

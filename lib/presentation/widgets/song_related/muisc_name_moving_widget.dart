@@ -20,10 +20,13 @@ class MusicNameMovingTextWidget extends StatelessWidget {
         builder: (context, songPLayNotifierData, themeModelData, _) =>
             songPLayNotifierData.songplayStatus == SongplayStatus.play
                 ? Marquee(
-                    blankSpace: songPLayNotifierData.currentPlayAudioModel!.title.length
+                    blankSpace: songPLayNotifierData
+                            .currentPlayAudioModel!.title.length
                             .toDouble() *
                         2,
-                    text: songPLayNotifierData.currentPlayAudioModel?.title ?? "",
+                    text:
+                        "${songPLayNotifierData.currentPlayAudioModel!.title} - "
+                        "${songPLayNotifierData.currentPlayAudioModel!.artist != '<unknown>' ? songPLayNotifierData.currentPlayAudioModel!.artist : 'Unknown Artist'}",
                     style: TextStyle(
                       color: themeModelData.darkThemeStatus
                           ? primaryTextColor
@@ -34,7 +37,8 @@ class MusicNameMovingTextWidget extends StatelessWidget {
                     velocity: 50,
                   )
                 : Text(
-                    songPLayNotifierData.currentPlayAudioModel?.title ?? "",
+                    "${songPLayNotifierData.currentPlayAudioModel!.title} - "
+                    "${songPLayNotifierData.currentPlayAudioModel!.artist != '<unknown>' ? songPLayNotifierData.currentPlayAudioModel!.artist : 'Unknown Artist'}",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: themeModelData.darkThemeStatus

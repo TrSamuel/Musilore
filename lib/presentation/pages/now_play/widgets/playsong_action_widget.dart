@@ -11,7 +11,7 @@ import 'package:musilore/presentation/widgets/song_related/muisc_name_moving_wid
 class SongPlayActionWidget extends StatelessWidget {
   final bool darkThemeStatus;
   final Color secondaryColor;
-   const SongPlayActionWidget({
+  const SongPlayActionWidget({
     super.key,
     required this.darkThemeStatus,
     required this.secondaryColor,
@@ -20,7 +20,7 @@ class SongPlayActionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const sizedBox = SizedBox(
-      height: 25,
+      height: 35,
     );
     return Column(
       children: [

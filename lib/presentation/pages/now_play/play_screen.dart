@@ -30,32 +30,27 @@ class PlaySongPage extends StatelessWidget {
               height: fullsize(context: context).height,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Stack(
-                  children: [
-                    SingleChildScrollView(
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 32),
-                        child: Column(
-                          children: [
-                            MusicContainer(
-                              secondaryColor: themeData.secondaryColor,
-                              darkTheme: themeData.darkThemeStatus,
-                            ),
-                            sizedBox,
-                            PlaySlider(
-                              darkThemeStatus: themeData.darkThemeStatus,
-                              secondaryColor: themeData.secondaryColor,
-                            ),
-                            sizedBox,
-                            SongPlayActionWidget(
-                              secondaryColor: themeData.secondaryColor,
-                              darkThemeStatus: themeData.darkThemeStatus,
-                            ),
-                          ],
-                        ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 38),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      MusicContainer(
+                        secondaryColor: themeData.secondaryColor,
+                        darkTheme: themeData.darkThemeStatus,
                       ),
-                    ),
-                  ],
+                      sizedBox,
+                      PlaySlider(
+                        darkThemeStatus: themeData.darkThemeStatus,
+                        secondaryColor: themeData.secondaryColor,
+                      ),
+                      sizedBox,
+                      SongPlayActionWidget(
+                        secondaryColor: themeData.secondaryColor,
+                        darkThemeStatus: themeData.darkThemeStatus,
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

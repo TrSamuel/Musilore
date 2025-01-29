@@ -4,7 +4,7 @@ import 'package:musilore/core/utils/size/size.dart';
 import 'package:musilore/core/utils/text/txt.dart';
 import 'package:musilore/data/model/audio%20model/audio_model.dart';
 import 'package:musilore/function/player_fun.dart';
-import 'package:musilore/presentation/widgets/song_related/song_list_tile.dart';
+import 'package:musilore/presentation/widgets/song_related/song_listtile/song_list_tile.dart';
 import 'package:musilore/state/notifier/song_notifier.dart';
 import 'package:musilore/state/notifier/theme_notifier.dart';
 import 'package:provider/provider.dart';

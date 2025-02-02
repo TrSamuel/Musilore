@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:musilore/core/utils/enum/song_play_enum.dart';
 import 'package:musilore/function/player_fun.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/play_actions/widgets/mini_player_action_buttons.dart';
+import 'package:musilore/presentation/pages/home/widgets/miniplayer/play_actions/widgets/mini_player_action_buttons.dart';
 import 'package:musilore/state/notifier/song_notifier.dart';
 
 class PlayPauseBtn extends StatelessWidget {

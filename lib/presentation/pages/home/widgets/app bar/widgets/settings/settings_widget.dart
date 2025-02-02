@@ -3,10 +3,10 @@ import 'package:musilore/core/utils/color/colors.dart';
 import 'package:musilore/core/utils/secure/devemail.dart';
 import 'package:musilore/core/utils/size/size.dart';
 import 'package:musilore/core/utils/text/txt.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/show_dialoge_settings.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/sync_now_btn.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/theme_changer_swich.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/app%20bar/widgets/settings/widgets/volume_adjuster/volume_adjuster.dart';
+import 'package:musilore/presentation/pages/home/widgets/app%20bar/widgets/settings/widgets/show_dialoge_settings.dart';
+import 'package:musilore/presentation/pages/home/widgets/app%20bar/widgets/settings/widgets/sync_now_btn.dart';
+import 'package:musilore/presentation/pages/home/widgets/app%20bar/widgets/settings/widgets/theme_changer_swich.dart';
+import 'package:musilore/presentation/pages/home/widgets/app%20bar/widgets/settings/widgets/volume_adjuster/volume_adjuster.dart';
 
 class SettingsWidget extends StatelessWidget {
   const SettingsWidget({

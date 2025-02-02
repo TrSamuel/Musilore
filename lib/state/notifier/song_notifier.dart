@@ -22,6 +22,7 @@ class SongNotifier extends ChangeNotifier {
   void getSongs(BuildContext context) async {
     await DbFunctions.instance.fetchSongsFromStorage(context: context);
     songsList = await DbFunctions.instance.getSongsFromBox();
+
     notifyListeners();
   }
 
@@ -34,7 +35,8 @@ class SongNotifier extends ChangeNotifier {
   }
 
   void getFavoritesStatus() async {
-    isFavorites = await DbFunctions.instance.isFavorites(id: currentPlayAudioModel!.id);
+    isFavorites =
+        await DbFunctions.instance.isFavorites(id: currentPlayAudioModel!.id);
     notifyListeners();
   }
 

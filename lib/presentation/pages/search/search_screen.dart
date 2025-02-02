@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:musilore/core/utils/color/colors.dart';
+import 'package:musilore/core/utils/size/size.dart';
+import 'package:musilore/core/utils/text/txt.dart';
 import 'package:musilore/data/model/audio%20model/audio_model.dart';
 import 'package:musilore/function/player_fun.dart';
 import 'package:musilore/presentation/pages/search/widgets/app_bar.dart';
@@ -24,7 +26,20 @@ class SearchScreen extends StatelessWidget {
               builder: (context, searchNotifierData, _) {
                 final List<AudioModel> songsList =
                     searchNotifierData.searchedSongsList;
-
+                if (searchNotifierData.emptyListStatus) {
+                  return Center(
+                    child: Text(
+                      "No songs available",
+                      style: TextStyle(
+                        fontFamily: textFontFamilyName,
+                        fontSize: h3Size,
+                        color: newDarkThemeData.darkThemeStatus
+                            ? primaryTextColor
+                            : primaryColor,
+                      ),
+                    ),
+                  );
+                }
                 PlayerFunctions.instance.audioModelList.clear();
                 PlayerFunctions.instance.audioModelList.addAll(songsList);
                 return ListView.builder(

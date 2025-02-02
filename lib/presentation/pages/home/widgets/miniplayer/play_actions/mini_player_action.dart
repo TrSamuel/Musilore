@@ -3,9 +3,9 @@
   import 'package:flutter/material.dart';
 import 'package:musilore/data/sources/db_functions.dart';
 import 'package:musilore/function/player_fun.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/play_actions/widgets/next_btn.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/play_actions/widgets/play_pause_btn.dart';
-import 'package:musilore/presentation/pages/home_page/widgets/miniplayer/play_actions/widgets/prev_btn.dart';
+import 'package:musilore/presentation/pages/home/widgets/miniplayer/play_actions/widgets/next_btn.dart';
+import 'package:musilore/presentation/pages/home/widgets/miniplayer/play_actions/widgets/play_pause_btn.dart';
+import 'package:musilore/presentation/pages/home/widgets/miniplayer/play_actions/widgets/prev_btn.dart';
 import 'package:musilore/state/notifier/song_notifier.dart';
 import 'package:musilore/state/notifier/theme_notifier.dart';
 import 'package:musilore/state/notifier/valuenotifiers.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:musilore/presentation/pages/home_page/home_screen.dart';
+import 'package:musilore/presentation/pages/home/home_screen.dart';
 import 'package:musilore/presentation/pages/now_play/play_screen.dart';
 import 'package:musilore/presentation/pages/search/search_screen.dart';
 import 'package:musilore/presentation/pages/splash/splash_page.dart';

@@ -1,7 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:musilore/core/utils/color/colors.dart';
 import 'package:musilore/data/sources/db_functions.dart';

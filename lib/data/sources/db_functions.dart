@@ -1,7 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:musilore/core/utils/text/txt.dart';
@@ -77,16 +76,17 @@ class DbFunctions {
     // check storage access permission
     if (hasPermission) {
       // if has permission , then fetching songs from storage to list.
-      List<SongModel> songs = await audioQuery.querySongs (
+      
+      List<SongModel> songs = await audioQuery.querySongs(
         sortType: null,
         orderType: OrderType.DESC_OR_GREATER,
         uriType: UriType.EXTERNAL,
         ignoreCase: true,
       );
-     
+
       songs = songs.where((song) => song.fileExtension == "mp3").toList();
-      
-       // check song is empty or not
+
+      // check song is empty or not
       if (songs.isNotEmpty) {
         // fetching each songs
         for (var song in songs) {
@@ -149,7 +149,8 @@ class DbFunctions {
         if (audioModel != null) {
           if (audioModel.title.trim().toLowerCase().startsWith(
                 songName.trim().toLowerCase(),
-              )) {
+              )||audioModel.artist.trim().toLowerCase().startsWith(
+                songName.trim().toLowerCase())) {
             songsList.add(audioModel);
           }
         }

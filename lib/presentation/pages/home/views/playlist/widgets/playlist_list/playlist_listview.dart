@@ -4,7 +4,7 @@ import 'package:musilore/core/utils/size/size.dart';
 import 'package:musilore/core/utils/text/txt.dart';
 import 'package:musilore/data/sources/db_functions.dart';
 import 'package:musilore/data/model/playlist%20model/audio_play_list_model.dart';
-import 'package:musilore/presentation/pages/home_page/views/playlist/widgets/playlist_list/playlist_listview_listtile.dart';
+import 'package:musilore/presentation/pages/home/views/playlist/widgets/playlist_list/playlist_listview_listtile.dart';
 import 'package:musilore/presentation/pages/open_playlist/open_playlist_page.dart';
 
 import 'package:musilore/state/notifier/play_list_notifier.dart';

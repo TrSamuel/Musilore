@@ -33,7 +33,7 @@ class SearchTextField extends StatelessWidget {
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: newThemeData.secondaryColor),
         ),
-        hintText: 'Seach songs...',
+        hintText: 'Seach songs...artists...',
         hintStyle: TextStyle(
           color: newThemeData.darkThemeStatus
               ? primaryTextColor
@@ -43,7 +43,9 @@ class SearchTextField extends StatelessWidget {
       onChanged: (searchValue) async {
         final searChNotifierData =
             Provider.of<SearchNotifer>(context, listen: false);
-        searChNotifierData.searchSongs(searchValue: searchValue);
+        searChNotifierData.searchSongs(
+          searchValue: searchValue,
+        );
       },
     );
   }

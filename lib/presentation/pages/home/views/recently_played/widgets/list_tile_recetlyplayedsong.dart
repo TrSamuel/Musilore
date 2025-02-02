@@ -5,7 +5,7 @@ import 'package:musilore/core/utils/text/txt.dart';
 import 'package:musilore/data/sources/db_functions.dart';
 import 'package:musilore/data/model/audio%20model/audio_model.dart';
 import 'package:musilore/function/player_fun.dart';
-import 'package:musilore/presentation/pages/home_page/views/recently_played/widgets/more_option_btn.dart';
+import 'package:musilore/presentation/pages/home/views/recently_played/widgets/more_option_btn.dart';
 import 'package:musilore/state/notifier/theme_notifier.dart';
 import 'package:musilore/state/notifier/song_notifier.dart';
 import 'package:provider/provider.dart';

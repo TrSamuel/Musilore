@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:musilore/function/player_fun.dart';
-import 'package:musilore/presentation/pages/home_page/views/recently_played/widgets/error_msg_widget.dart';
+import 'package:musilore/presentation/pages/home/views/recently_played/widgets/error_msg_widget.dart';
 import 'package:musilore/presentation/widgets/song_related/song_listtile/song_list_tile.dart';
 import 'package:musilore/state/notifier/song_notifier.dart';
 import 'package:provider/provider.dart';

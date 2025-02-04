@@ -3,7 +3,7 @@ import 'package:musilore/core/utils/color/colors.dart';
 import 'package:musilore/core/utils/secure/devemail.dart';
 import 'package:musilore/core/utils/size/size.dart';
 import 'package:musilore/core/utils/text/txt.dart';
-import 'package:musilore/presentation/pages/home/widgets/app%20bar/widgets/settings/widgets/show_dialoge_settings.dart';
+import 'package:musilore/presentation/pages/home/widgets/app_bar/widgets/settings/widgets/show_dialoge_settings.dart';
 
 class PrivacyPolicy extends StatelessWidget {
   const PrivacyPolicy({

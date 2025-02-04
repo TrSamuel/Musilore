@@ -17,6 +17,7 @@ void main() async {
     DeviceOrientation.portraitDown,
   ]).then((_) {
     runApp(const MusiLore());
+
   });
 }
 

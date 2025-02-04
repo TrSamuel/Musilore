@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:musilore/core/utils/color/colors.dart';
 import 'package:musilore/core/utils/size/size.dart';
-import 'package:musilore/presentation/pages/home/widgets/app%20bar/tab_bar_widget.dart';
-import 'package:musilore/presentation/pages/home/widgets/app%20bar/widgets/search/search_btn.dart';
-import 'package:musilore/presentation/pages/home/widgets/app%20bar/widgets/settings/settings_widget.dart';
+import 'package:musilore/presentation/pages/home/widgets/app_bar/tab_bar_widget.dart';
+import 'package:musilore/presentation/pages/home/widgets/app_bar/widgets/search/search_btn.dart';
+import 'package:musilore/presentation/pages/home/widgets/app_bar/widgets/settings/settings_widget.dart';
 import 'package:musilore/presentation/widgets/app_name_logo/app_name_text_widget.dart';
 import 'package:musilore/state/notifier/theme_notifier.dart';
 import 'package:provider/provider.dart';

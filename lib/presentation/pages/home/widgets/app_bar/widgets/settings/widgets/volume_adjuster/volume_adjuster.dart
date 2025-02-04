@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:musilore/presentation/pages/home/widgets/app%20bar/widgets/settings/widgets/volume_adjuster/widgets/adjust_slider.dart';
-import 'package:musilore/presentation/pages/home/widgets/app%20bar/widgets/settings/widgets/volume_adjuster/widgets/label_volume_adjuster.dart';
-
+import 'package:musilore/presentation/pages/home/widgets/app_bar/widgets/settings/widgets/volume_adjuster/widgets/adjust_slider.dart';
+import 'package:musilore/presentation/pages/home/widgets/app_bar/widgets/settings/widgets/volume_adjuster/widgets/label_volume_adjuster.dart';
 class VolumeAdjuster extends StatelessWidget {
   const VolumeAdjuster({
     super.key,
